@@ -1,4 +1,3 @@
-Lữ Phúc
 <?php include 'db.php';
 
 $id = $_GET['id'];
