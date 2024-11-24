@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <title>CV Cá Nhân</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=1.0">
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
     $(document).ready(function(){

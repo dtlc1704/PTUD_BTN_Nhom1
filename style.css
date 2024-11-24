@@ -1,104 +1,157 @@
-/* Tổng quan - Đặt font chữ và khoảng cách */
+/* Tổng quan */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #F4FAFF; /* Nền tổng thể sáng */
     color: #333;
 }
 
-/* Tiêu đề */
+/* Tiêu đề chính (H1) */
 h1 {
-    background-color: #4CAF50;
+    background-color: #4F91AC; /* Màu xanh đậm */
     color: white;
-    padding: 20px;
-    text-align: center;
+    padding: 30px 0;
     margin: 0;
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 5px solid #DAF4FF; /* Viền dưới nổi bật */
+    border-radius: 0 0 10px 10px; /* Bo góc đáy */
 }
 
+/* Tiêu đề phụ (H2) */
 h2 {
-    color: #4CAF50;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 5px;
-    margin-top: 30px;
+    color: #4F91AC;
+    font-size: 1.5rem;
+    margin: 30px auto 20px;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #DAF4FF;
+    width: 80%;
 }
 
 /* Liên kết */
 a {
-    color: #4CAF50;
+    color: #4F91AC;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1rem;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #366B87;
 }
 
 /* Nút Thêm mới */
 a.add-btn {
-    display: inline-block;
-    background-color: #4CAF50;
+    display: block;
+    background-color: #4F91AC;
     color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 20px auto;
     text-align: center;
-    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    width: fit-content; /* Kích thước vừa nội dung */
 }
 
 a.add-btn:hover {
-    background-color: #45a049;
+    background-color: #366B87;
 }
 
-/* Phần nội dung */
+/* Khung nội dung */
 .container {
     width: 80%;
-    margin: 20px auto;
+    margin: 30px auto;
     background: white;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 1px solid #DAF4FF;
 }
 
-/* Thông tin chi tiết */
+/* Các phần nội dung */
 section {
     margin-bottom: 30px;
 }
 
-/* Phần tử từng mục */
 section p {
-    margin: 5px 0;
+    margin: 10px 0;
+    color: #333;
+    font-size: 1rem;
 }
 
 /* Đường phân cách */
 hr {
     border: 0;
     height: 1px;
-    background: #ddd;
+    background: #DAF4FF;
     margin: 20px 0;
 }
 
-/* Nút Xóa và Chỉnh sửa */
+/* Nút chỉnh sửa và xóa */
 a.edit-btn, a.delete-btn {
     color: white;
-    padding: 5px 10px;
-    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 5px;
     margin-right: 10px;
-    font-size: 14px;
 }
 
 a.edit-btn {
-    background-color: #007BFF;
+    background-color: #4F91AC;
 }
 
 a.edit-btn:hover {
-    background-color: #0056b3;
+    background-color: #366B87;
 }
 
 a.delete-btn {
-    background-color: #FF5722;
+    background-color: #FF6B6B;
 }
 
 a.delete-btn:hover {
-    background-color: #E64A19;
+    background-color: #E63946;
+}
+
+/* Căn chỉnh thông tin cá nhân */
+.personal-info p {
+    font-size: 1.1rem;
+    margin: 8px 0;
+}
+
+.personal-info a {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Responsive - Hiển thị trên màn hình nhỏ */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        padding: 20px 0;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    a.add-btn {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    a.edit-btn, a.delete-btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
 }
